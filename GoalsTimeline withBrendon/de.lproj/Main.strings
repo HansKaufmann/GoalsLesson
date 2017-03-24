@@ -1,0 +1,24 @@
+
+/* Class = "UITabBarItem"; title = "Report"; ObjectID = "Fx9-cl-GSp"; */
+"Fx9-cl-GSp.title" = "Report";
+
+/* Class = "UILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
+"NDk-cv-Gan.text" = "Loaded by SecondViewController";
+
+/* Class = "UITabBarItem"; title = "New Goal"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "New Goal";
+
+/* Class = "UITabBarItem"; title = "News"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "News";
+
+/* Class = "UITabBarItem"; title = "Mentoring"; ObjectID = "nii-I8-kwy"; */
+"nii-I8-kwy.title" = "Mentoring";
+
+/* Class = "UILabel"; text = "New Goal"; ObjectID = "t8R-dE-eRd"; */
+"t8R-dE-eRd.text" = "New Goal";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "ulV-3j-eaP"; */
+"ulV-3j-eaP.title" = "Home";
+
+/* Class = "UILabel"; text = "Second View"; ObjectID = "zEq-FU-wV5"; */
+"zEq-FU-wV5.text" = "Second View";
