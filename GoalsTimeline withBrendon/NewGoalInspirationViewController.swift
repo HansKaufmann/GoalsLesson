@@ -8,10 +8,22 @@
 
 import UIKit
 
-class NewGoalInspirationViewController: UIViewController {
+class NewGoalInspirationViewController: BaseViewController {
 
+
+    @IBOutlet weak var createAGoalButton: UIButton!
+    
+    @IBOutlet weak var heading: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //heading.font = UIFont(name: "Lato-Black", size: 48.0)//UIFont.glsSketchTitleFont()
+        
+        createAGoalButton.layer.cornerRadius = 20
+        createAGoalButton.layer.borderColor = UIColor(red: 0.0, green: 150.0 / 255.0, blue: 136.0 / 255.0, alpha: 1.0).cgColor
+        createAGoalButton.layer.borderWidth = 1
+        createAGoalButton.contentEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10)
 
         // Do any additional setup after loading the view.
     }
@@ -20,16 +32,4 @@ class NewGoalInspirationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

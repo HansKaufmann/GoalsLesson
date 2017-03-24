@@ -12,24 +12,24 @@ class BaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationBar.shadowImage = UIImage()
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+        var backArrow = UIImage(named: "arrowLeftSimpleLineIcons")
+        
+        let topPadding: CGFloat = 4
+        let leftPadding: CGFloat = 22
+        
+        let adjustSizeForBetterHorizontalAlignment: CGSize = CGSize(width: backArrow!.size.width + leftPadding, height: backArrow!.size.height + topPadding)
+        
+        UIGraphicsBeginImageContextWithOptions(adjustSizeForBetterHorizontalAlignment, false, 0)
+        backArrow?.draw(at: CGPoint(x: leftPadding, y: topPadding))
+        backArrow = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        self.navigationBar.backIndicatorImage = backArrow
+        self.navigationBar.backIndicatorTransitionMaskImage = backArrow
 
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

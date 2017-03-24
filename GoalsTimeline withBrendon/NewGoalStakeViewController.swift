@@ -8,28 +8,38 @@
 
 import UIKit
 
-class NewGoalStakeViewController: UIViewController {
+class NewGoalStakeViewController: UIViewController, UITextViewDelegate {
+    
 
+    @IBOutlet weak var textField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        // Do any additional setup after loading the view.
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            // blur focus on the textfield - dissmissing th keyboard
+            textView.resignFirstResponder()
+            
+            // remove the current view from the navigactioncontroller's stack of views. Aka go back
+            _ = self.navigationController?.popViewController(animated: true)
+            
+            let notificationName = Notification.Name(Constants.stake)
+            let data: [String: String] = ["title": textView.text]
+            NotificationCenter.default.post(name: notificationName, object: nil, userInfo: data)
+
+            return false;
+        }
+        
+        // update text field with new character from keyboard
+        return true;
+
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

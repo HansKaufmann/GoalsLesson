@@ -14,6 +14,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        self.title = ""
     }
 
 }
