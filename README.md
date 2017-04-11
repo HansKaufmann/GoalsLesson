@@ -1,10 +1,10 @@
 # GoalsLesson
 
-### Git
+## Git
 
-## Commit to github
+### Commit to github
 
-Add changes to be watched by git
+Add files to be watched by git
 
 ```bash
 git add -A
