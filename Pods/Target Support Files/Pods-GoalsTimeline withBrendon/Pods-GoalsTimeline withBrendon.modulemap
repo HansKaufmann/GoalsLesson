@@ -1,0 +1,6 @@
+framework module Pods_GoalsTimeline_withBrendon {
+  umbrella header "Pods-GoalsTimeline withBrendon-umbrella.h"
+
+  export *
+  module * { export * }
+}

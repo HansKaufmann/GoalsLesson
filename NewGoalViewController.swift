@@ -10,20 +10,37 @@ import UIKit
 
 // This class promises to adhere to the NewGoalViewDelegate protocol
 // By promise meaning it wont compile unless it does
-class NewGoalViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, NewGoalViewDelegate  {
+class NewGoalViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
 
     @IBOutlet weak var tableView: UITableView!
-    var titles = ["Type your goal","Milestones","Mentor","Stake","Friendsfeed"]
+    var titles = ["Type your goal","Milestones","Mentor","Stake","Friendsfeed","Save"]
     var subtitles = ["","Lorem1","Lorem1","Lorem1","Lorem1"]
     var selectedCellIndex: Int = -1
+    var newGoalModel: NewGoalModel?
+    var actions = 3
+    var duration = 3
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let notificationName = Notification.Name(Constants.stake)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.updateStake), name: notificationName, object: nil)
+        self.newGoalModel =  NewGoalModel()
+
+        let titleNotification = Notification.Name(NEW_GOAL.TITLE_NOTIFICATION)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateTitle), name: titleNotification, object: nil)
+        
+        let stakeNotification = Notification.Name(NEW_GOAL.STAKE_NOTIFICATION)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateStake), name: stakeNotification, object: nil)
+        
+        let typeNotification = Notification.Name(NEW_GOAL.TYPE_NOTIFICATION)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateType), name: typeNotification, object: nil)
+        
+        let durationNotification = Notification.Name(NEW_GOAL.DURATION_NOTIFICATION)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateDuration), name: durationNotification, object: nil)
+        
+        let actionsNotification = Notification.Name(NEW_GOAL.ACTIONS_NOTIFICATION)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateActions), name: actionsNotification, object: nil)
         
     }
     
@@ -41,6 +58,9 @@ class NewGoalViewController: BaseViewController, UITableViewDelegate, UITableVie
         if indexPath.row == 0 {
             return 120
         }
+        if indexPath.row == titles.count - 1 {
+            return 70
+        }
         return 100
     }
     
@@ -50,15 +70,22 @@ class NewGoalViewController: BaseViewController, UITableViewDelegate, UITableVie
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath) as! NewGoalTitleTableViewCell
             cell.title.text = titles[indexPath.row]
             return cell
-        }else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "otherCell", for: indexPath) as! NewGoalTableViewCell
-            cell.title.text = titles[indexPath.row]
-            cell.subtitle.text = subtitles[indexPath.row]
+        }
+        
+        if indexPath.row == titles.count - 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "newGoalSaveCell", for: indexPath) as! NewGoalSaveTableViewCell
             return cell
         }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "otherCell", for: indexPath) as! NewGoalTableViewCell
+        cell.title.text = titles[indexPath.row]
+        cell.subtitle.text = subtitles[indexPath.row]
+        return cell
+        
 
     }
     
+    // handles when the user clicks on a table cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         self.selectedCellIndex = indexPath.row
@@ -76,46 +103,125 @@ class NewGoalViewController: BaseViewController, UITableViewDelegate, UITableVie
             self.performSegue(withIdentifier: "friends_feed_segue", sender: self)
             
         default:
-            NSLog("No segue fpr this cell")
+            NSLog("No segue for this cell")
         }
-        
         
     }
     
-    // before pushing a new view
-    // we assign this class as the delegate for that view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "new_goal_segue" {
-            let destination = segue.destination as! NewGoalEnterTitleViewController
-            
-            // Here we become the coffeeshop until someone else is
-            destination.delegate = self;
-        }
+        // this is where you can set the values of the view from the model
         
+//        if segue.identifier == "new_goal_segue" {
+//            let vc = segue.destination as! NewGoalEnterTitleViewController
+//            vc.titleField.text = "sdf"
+//        }
+    }
+    
+    
+    // this is called when we received a notification that the goal's title changed on the other view
+    func updateTitle(_ notification: NSNotification) {
+        // get new value
+        let title = notification.userInfo?["title"] as! String
+        
+        // log the new value
+        NSLog(title)
+        
+        // update the array of cell titles with the new goalTitle value
+        titles[selectedCellIndex] = title
+        
+        // find the correct cell to reload
+        let indexPath = IndexPath(item: selectedCellIndex, section: 0)
+        
+        // reload that cell with the now updated titles array
+        tableView.reloadRows(at: [indexPath], with: .none)
+        
+        // save the new goalTitle in our data model
+        self.newGoalModel?.title = title
+        
+    }
+    
+    // this is called when we received a notification that the stake changed on the other view
+    func updateStake(_ notification: NSNotification) {
+        // get new value
+        let stake = notification.userInfo?["stake"] as! String
+        
+        // log the new value
+        NSLog(stake)
+        
+        // update the array of cell subtitles with the new stake value
+        subtitles[selectedCellIndex] = stake
+        
+        // find the correct cell to reload
+        let indexPath = IndexPath(item: selectedCellIndex, section: 0)
+        
+        // reload that cell with the now updated subtitles array
+        tableView.reloadRows(at: [indexPath], with: .none)
+        
+        // save the new stake in our data model
+        self.newGoalModel?.stake = stake
+        
+    }
+    
+    func updateType(_ notification: NSNotification){
+        
+        // get value from notification data
+        let typeString = notification.userInfo?["type"] as! String
+
+        // log the new value
+        NSLog(typeString)
+        
+        // convert string to int
+        let type: Int? = Int(typeString)
+        
+        // save the new type in our data model
+        self.newGoalModel?.type = type!
+    }
+    
+    func updateDuration(_ notification: NSNotification) {
+        
+        // get value from notification data
+        let durationString = notification.userInfo?["duration"] as! String
+        
+        // log the new value
+        NSLog(durationString)
+        
+        // save string to int to var
+        self.duration = Int(durationString)!
+        
+
+        
+    }
+    
+    func updateActions(_ notification: NSNotification) {
+        
+        // get value from notification data
+        let actionsString = notification.userInfo?["actions"] as! String
+        
+        // log the new value
+        NSLog(actionsString)
+        
+        // convert string to int save to var
+        self.actions = Int(actionsString)!
 
     }
     
-    
-    // This is what we promised to do
-    //
-    // This is called by the page that delegated us this task
-    func viewDataDidChange(title: String) {
-        NSLog(title as String)
-        titles[selectedCellIndex] = title
+    @IBAction func saveGoal(_ sender: PrimaryUIButton) {
         
-        let indexPath = IndexPath(item: selectedCellIndex, section: 0)
-        tableView.reloadRows(at: [indexPath], with: .top)
-    }
-    
-    func updateStake(_ notification: NSNotification) {
-        let title = notification.userInfo?["title"] as! String
-        NSLog(title)
+        var temp = [Int]()
+        var i = 0
+        while i < duration {
+            temp.append(actions)
+            i += 1
+        }
         
-        subtitles[selectedCellIndex] = title
+        self.newGoalModel?.actions = temp
         
-        let indexPath = IndexPath(item: selectedCellIndex, section: 0)
-        tableView.reloadRows(at: [indexPath], with: .top)
+        print(self.newGoalModel!)
+        
+        let dataBaseManager = DataBaseManager()
+        dataBaseManager.saveGoal(goalParameters: self.newGoalModel!)
         
     }
+    
 
 }

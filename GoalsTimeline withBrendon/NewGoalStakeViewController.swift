@@ -28,9 +28,10 @@ class NewGoalStakeViewController: UIViewController, UITextViewDelegate {
             // remove the current view from the navigactioncontroller's stack of views. Aka go back
             _ = self.navigationController?.popViewController(animated: true)
             
-            let notificationName = Notification.Name(Constants.stake)
-            let data: [String: String] = ["title": textView.text]
+            let notificationName = Notification.Name(NEW_GOAL.STAKE_NOTIFICATION)
+            let data: [String: String] = ["stake": textView.text]
             NotificationCenter.default.post(name: notificationName, object: nil, userInfo: data)
+        
 
             return false;
         }

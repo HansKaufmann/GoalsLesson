@@ -12,9 +12,11 @@ class BaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         navigationBar.shadowImage = UIImage()
         navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.backgroundColor = UIColor(white: 1, alpha: 0.97)
+        
         
         var backArrow = UIImage(named: "arrowLeftSimpleLineIcons")
         

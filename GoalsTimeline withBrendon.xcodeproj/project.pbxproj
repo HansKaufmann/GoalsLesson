@@ -12,6 +12,19 @@
 		09081E271E85679400761CDE /* NewGoalEnterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09081E261E85679400761CDE /* NewGoalEnterTitleViewController.swift */; };
 		09081E291E85910A00761CDE /* NewGoalStakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09081E281E85910A00761CDE /* NewGoalStakeViewController.swift */; };
 		09081E2C1E859B1B00761CDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09081E2B1E859B1B00761CDE /* Constants.swift */; };
+		09081E2E1E86BD8200761CDE /* NewGoalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09081E2D1E86BD8200761CDE /* NewGoalCollectionViewCell.swift */; };
+		09139F951E9BBDCE00F2E9A7 /* NewGoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09139F941E9BBDCE00F2E9A7 /* NewGoalModel.swift */; };
+		09139F971E9CFE5000F2E9A7 /* NewGoalMilestonesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09139F961E9CFE5000F2E9A7 /* NewGoalMilestonesCollectionViewController.swift */; };
+		09139F9B1E9D3F2000F2E9A7 /* NewGoalSaveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09139F9A1E9D3F2000F2E9A7 /* NewGoalSaveTableViewCell.swift */; };
+		09139F9F1E9D45CD00F2E9A7 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09139F9E1E9D45CD00F2E9A7 /* DatabaseManager.swift */; };
+		0920BF741E895A4200E62F34 /* PrimaryUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920BF731E895A4200E62F34 /* PrimaryUIButton.swift */; };
+		0920BF771E895F4B00E62F34 /* InspirationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920BF761E895F4B00E62F34 /* InspirationTableViewController.swift */; };
+		0920BF791E8960A100E62F34 /* ParagraphLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920BF781E8960A100E62F34 /* ParagraphLabel.swift */; };
+		0920BF7B1E8962D800E62F34 /* ScreenHeadingWithInfoTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920BF7A1E8962D800E62F34 /* ScreenHeadingWithInfoTextTableViewCell.swift */; };
+		0920BF7D1E89645E00E62F34 /* InspirationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920BF7C1E89645E00E62F34 /* InspirationTableViewCell.swift */; };
+		0920BF7F1E896B4A00E62F34 /* InspirationGoalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920BF7E1E896B4A00E62F34 /* InspirationGoalCollectionViewCell.swift */; };
+		0920BF811E896B6D00E62F34 /* InspirationCategoryHeadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920BF801E896B6D00E62F34 /* InspirationCategoryHeadingCollectionReusableView.swift */; };
+		0920BF851E89767600E62F34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0920BF841E89767600E62F34 /* GoogleService-Info.plist */; };
 		0933A63E1E8406690056640F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933A63D1E8406690056640F /* AppDelegate.swift */; };
 		0933A6451E8406690056640F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0933A6431E8406690056640F /* Main.storyboard */; };
 		0933A6471E8406690056640F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0933A6461E8406690056640F /* Assets.xcassets */; };
@@ -45,6 +58,14 @@
 		0933A7541E84877C0056640F /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933A7531E84877C0056640F /* MilestonesViewController.swift */; };
 		0933A7561E8545080056640F /* NewGoalInspirationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933A7551E8545080056640F /* NewGoalInspirationViewController.swift */; };
 		0933A75C1E854FEB0056640F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933A75B1E854FEB0056640F /* BaseViewController.swift */; };
+		0997A6D61E89B4B600479C61 /* inspirationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997A6D51E89B4B600479C61 /* inspirationData.swift */; };
+		0997A6D81E89C07900479C61 /* MentoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997A6D71E89C07900479C61 /* MentoringViewController.swift */; };
+		0997A6DC1E8ABFD500479C61 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997A6DB1E8ABFD500479C61 /* ButtonTableViewCell.swift */; };
+		09A9BFD91E8AE1490060C5D5 /* InspirationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9BFD81E8AE1490060C5D5 /* InspirationViewController.swift */; };
+		09A9BFDF1E8C18AD0060C5D5 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9BFDE1E8C18AD0060C5D5 /* RadioButton.swift */; };
+		0CAFAEB3CB3043D7F1BD4C00 /* Pods_GoalsTimeline_withBrendon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0838B384FF3666A805FDA533 /* Pods_GoalsTimeline_withBrendon.framework */; };
+		510A46051FC2E6CAD9B2A06D /* Pods_GoalsTimeline_withBrendonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47ED36C85243BD64028F3B1B /* Pods_GoalsTimeline_withBrendonTests.framework */; };
+		569A18CD16C3684C2931BF47 /* Pods_GoalsTimeline_withBrendonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F76716142D4F1013FDD9843 /* Pods_GoalsTimeline_withBrendonUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +86,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0838B384FF3666A805FDA533 /* Pods_GoalsTimeline_withBrendon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoalsTimeline_withBrendon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09081E221E85513200761CDE /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		09081E241E85585300761CDE /* NewGoalTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalTitleTableViewCell.swift; sourceTree = "<group>"; };
 		09081E261E85679400761CDE /* NewGoalEnterTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalEnterTitleViewController.swift; sourceTree = "<group>"; };
 		09081E281E85910A00761CDE /* NewGoalStakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalStakeViewController.swift; sourceTree = "<group>"; };
 		09081E2B1E859B1B00761CDE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09081E2D1E86BD8200761CDE /* NewGoalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalCollectionViewCell.swift; sourceTree = "<group>"; };
+		09139F941E9BBDCE00F2E9A7 /* NewGoalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalModel.swift; sourceTree = "<group>"; };
+		09139F961E9CFE5000F2E9A7 /* NewGoalMilestonesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalMilestonesCollectionViewController.swift; sourceTree = "<group>"; };
+		09139F9A1E9D3F2000F2E9A7 /* NewGoalSaveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalSaveTableViewCell.swift; sourceTree = "<group>"; };
+		09139F9E1E9D45CD00F2E9A7 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		0920BF731E895A4200E62F34 /* PrimaryUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryUIButton.swift; sourceTree = "<group>"; };
+		0920BF761E895F4B00E62F34 /* InspirationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspirationTableViewController.swift; sourceTree = "<group>"; };
+		0920BF781E8960A100E62F34 /* ParagraphLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphLabel.swift; sourceTree = "<group>"; };
+		0920BF7A1E8962D800E62F34 /* ScreenHeadingWithInfoTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenHeadingWithInfoTextTableViewCell.swift; sourceTree = "<group>"; };
+		0920BF7C1E89645E00E62F34 /* InspirationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspirationTableViewCell.swift; sourceTree = "<group>"; };
+		0920BF7E1E896B4A00E62F34 /* InspirationGoalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspirationGoalCollectionViewCell.swift; sourceTree = "<group>"; };
+		0920BF801E896B6D00E62F34 /* InspirationCategoryHeadingCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspirationCategoryHeadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		0920BF841E89767600E62F34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0933A63A1E8406690056640F /* GoalsTimeline withBrendon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoalsTimeline withBrendon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0933A63D1E8406690056640F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0933A6441E8406690056640F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +146,19 @@
 		0933A7531E84877C0056640F /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		0933A7551E8545080056640F /* NewGoalInspirationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGoalInspirationViewController.swift; sourceTree = "<group>"; };
 		0933A75B1E854FEB0056640F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0997A6D51E89B4B600479C61 /* inspirationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspirationData.swift; sourceTree = "<group>"; };
+		0997A6D71E89C07900479C61 /* MentoringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentoringViewController.swift; sourceTree = "<group>"; };
+		0997A6DB1E8ABFD500479C61 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		09A9BFD81E8AE1490060C5D5 /* InspirationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspirationViewController.swift; sourceTree = "<group>"; };
+		09A9BFDE1E8C18AD0060C5D5 /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		09D23BA1EE81F549665F01D6 /* Pods-GoalsTimeline withBrendon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTimeline withBrendon.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoalsTimeline withBrendon/Pods-GoalsTimeline withBrendon.release.xcconfig"; sourceTree = "<group>"; };
+		184D8FD9EC999A995948C63E /* Pods-GoalsTimeline withBrendon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTimeline withBrendon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoalsTimeline withBrendon/Pods-GoalsTimeline withBrendon.debug.xcconfig"; sourceTree = "<group>"; };
+		2248D77ED7892D20CD895027 /* Pods-GoalsTimeline withBrendonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTimeline withBrendonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoalsTimeline withBrendonTests/Pods-GoalsTimeline withBrendonTests.release.xcconfig"; sourceTree = "<group>"; };
+		47ED36C85243BD64028F3B1B /* Pods_GoalsTimeline_withBrendonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoalsTimeline_withBrendonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F76716142D4F1013FDD9843 /* Pods_GoalsTimeline_withBrendonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoalsTimeline_withBrendonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE593043225D3C7854FDADE /* Pods-GoalsTimeline withBrendonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTimeline withBrendonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoalsTimeline withBrendonTests/Pods-GoalsTimeline withBrendonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		658060850CE5A3D943F3EFDD /* Pods-GoalsTimeline withBrendonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTimeline withBrendonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoalsTimeline withBrendonUITests/Pods-GoalsTimeline withBrendonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A510A777CB42A3BD967DE72 /* Pods-GoalsTimeline withBrendonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalsTimeline withBrendonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoalsTimeline withBrendonUITests/Pods-GoalsTimeline withBrendonUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAFAEB3CB3043D7F1BD4C00 /* Pods_GoalsTimeline_withBrendon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510A46051FC2E6CAD9B2A06D /* Pods_GoalsTimeline_withBrendonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569A18CD16C3684C2931BF47 /* Pods_GoalsTimeline_withBrendonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +197,38 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		09139F9D1E9D456300F2E9A7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				09139F9E1E9D45CD00F2E9A7 /* DatabaseManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		0920BF721E895A0500E62F34 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0920BF731E895A4200E62F34 /* PrimaryUIButton.swift */,
+				0920BF781E8960A100E62F34 /* ParagraphLabel.swift */,
+				09A9BFDE1E8C18AD0060C5D5 /* RadioButton.swift */,
+			);
+			name = Subviews;
+			sourceTree = "<group>";
+		};
+		0920BF751E895F0500E62F34 /* InspirationTab */ = {
+			isa = PBXGroup;
+			children = (
+				0920BF761E895F4B00E62F34 /* InspirationTableViewController.swift */,
+				0920BF7A1E8962D800E62F34 /* ScreenHeadingWithInfoTextTableViewCell.swift */,
+				0920BF7C1E89645E00E62F34 /* InspirationTableViewCell.swift */,
+				0920BF7E1E896B4A00E62F34 /* InspirationGoalCollectionViewCell.swift */,
+				0920BF801E896B6D00E62F34 /* InspirationCategoryHeadingCollectionReusableView.swift */,
+				0997A6DB1E8ABFD500479C61 /* ButtonTableViewCell.swift */,
+				09A9BFD81E8AE1490060C5D5 /* InspirationViewController.swift */,
+			);
+			name = InspirationTab;
+			sourceTree = "<group>";
+		};
 		0933A6311E8406690056640F = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +236,8 @@
 				0933A6531E84066A0056640F /* GoalsTimeline withBrendonTests */,
 				0933A65E1E84066A0056640F /* GoalsTimeline withBrendonUITests */,
 				0933A63B1E8406690056640F /* Products */,
+				E23858CC2E6D643A886422C0 /* Pods */,
+				0F8C53A75292C2F7B72DD643 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +254,8 @@
 		0933A63C1E8406690056640F /* GoalsTimeline withBrendon */ = {
 			isa = PBXGroup;
 			children = (
+				09139F9D1E9D456300F2E9A7 /* Managers */,
+				0997A6CF1E89B2E900479C61 /* DataModels */,
 				09081E2A1E859AD100761CDE /* Constants */,
 				0933A7581E854EE20056640F /* Categories */,
 				0933A66D1E8407760056640F /* Fonts */,
@@ -178,6 +265,7 @@
 				0933A6461E8406690056640F /* Assets.xcassets */,
 				0933A6481E8406690056640F /* LaunchScreen.storyboard */,
 				0933A64B1E8406690056640F /* Info.plist */,
+				0920BF841E89767600E62F34 /* GoogleService-Info.plist */,
 			);
 			path = "GoalsTimeline withBrendon";
 			sourceTree = "<group>";
@@ -231,8 +319,11 @@
 		0933A7571E854EDB0056640F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				09A440571E8DB0A5001BF958 /* Firebase */,
+				0920BF721E895A0500E62F34 /* Subviews */,
 				0933A75A1E854FBC0056640F /* Base */,
 				0933A7591E854F160056640F /* NewGoalTab */,
+				0997A6D71E89C07900479C61 /* MentoringViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -248,14 +339,18 @@
 		0933A7591E854F160056640F /* NewGoalTab */ = {
 			isa = PBXGroup;
 			children = (
+				0920BF751E895F0500E62F34 /* InspirationTab */,
 				0933A7531E84877C0056640F /* MilestonesViewController.swift */,
+				09139F961E9CFE5000F2E9A7 /* NewGoalMilestonesCollectionViewController.swift */,
 				0933A7551E8545080056640F /* NewGoalInspirationViewController.swift */,
 				0933A7131E843AA00056640F /* NewGoalNavigationController.swift */,
 				0933A70F1E842D8B0056640F /* NewGoalTableViewCell.swift */,
 				09081E241E85585300761CDE /* NewGoalTitleTableViewCell.swift */,
 				0933A7111E8432DB0056640F /* NewGoalViewController.swift */,
+				09139F9A1E9D3F2000F2E9A7 /* NewGoalSaveTableViewCell.swift */,
 				09081E261E85679400761CDE /* NewGoalEnterTitleViewController.swift */,
 				09081E281E85910A00761CDE /* NewGoalStakeViewController.swift */,
+				09081E2D1E86BD8200761CDE /* NewGoalCollectionViewCell.swift */,
 			);
 			name = NewGoalTab;
 			sourceTree = "<group>";
@@ -269,6 +364,45 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		0997A6CF1E89B2E900479C61 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				0997A6D51E89B4B600479C61 /* inspirationData.swift */,
+				09139F941E9BBDCE00F2E9A7 /* NewGoalModel.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		09A440571E8DB0A5001BF958 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		0F8C53A75292C2F7B72DD643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0838B384FF3666A805FDA533 /* Pods_GoalsTimeline_withBrendon.framework */,
+				47ED36C85243BD64028F3B1B /* Pods_GoalsTimeline_withBrendonTests.framework */,
+				5F76716142D4F1013FDD9843 /* Pods_GoalsTimeline_withBrendonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E23858CC2E6D643A886422C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				184D8FD9EC999A995948C63E /* Pods-GoalsTimeline withBrendon.debug.xcconfig */,
+				09D23BA1EE81F549665F01D6 /* Pods-GoalsTimeline withBrendon.release.xcconfig */,
+				5FE593043225D3C7854FDADE /* Pods-GoalsTimeline withBrendonTests.debug.xcconfig */,
+				2248D77ED7892D20CD895027 /* Pods-GoalsTimeline withBrendonTests.release.xcconfig */,
+				658060850CE5A3D943F3EFDD /* Pods-GoalsTimeline withBrendonUITests.debug.xcconfig */,
+				6A510A777CB42A3BD967DE72 /* Pods-GoalsTimeline withBrendonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +410,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0933A6641E84066A0056640F /* Build configuration list for PBXNativeTarget "GoalsTimeline withBrendon" */;
 			buildPhases = (
+				81E455888D31DB3192EC3E0C /* [CP] Check Pods Manifest.lock */,
 				0933A6361E8406690056640F /* Sources */,
 				0933A6371E8406690056640F /* Frameworks */,
 				0933A6381E8406690056640F /* Resources */,
+				CFF18D2235505208627D62D0 /* [CP] Embed Pods Frameworks */,
+				EA899109D2E28F5D445AC149 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,9 +430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0933A6671E84066A0056640F /* Build configuration list for PBXNativeTarget "GoalsTimeline withBrendonTests" */;
 			buildPhases = (
+				1929EA8B8B4197DCB33E196C /* [CP] Check Pods Manifest.lock */,
 				0933A64C1E84066A0056640F /* Sources */,
 				0933A64D1E84066A0056640F /* Frameworks */,
 				0933A64E1E84066A0056640F /* Resources */,
+				B84FED3AE54D7CFCAA0AEF8D /* [CP] Embed Pods Frameworks */,
+				0615EC9B693CFFD100E45EFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,9 +451,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0933A66A1E84066A0056640F /* Build configuration list for PBXNativeTarget "GoalsTimeline withBrendonUITests" */;
 			buildPhases = (
+				58E1DAAB6491D5F85EDE55F4 /* [CP] Check Pods Manifest.lock */,
 				0933A6571E84066A0056640F /* Sources */,
 				0933A6581E84066A0056640F /* Frameworks */,
 				0933A6591E84066A0056640F /* Resources */,
+				54F83D18A8B009FFC7211F5B /* [CP] Embed Pods Frameworks */,
+				EC7B24974A34A17C0042703D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,6 +539,7 @@
 				0933A6851E8407760056640F /* Lato-BoldItalic.ttf in Resources */,
 				0933A6901E8407760056640F /* Lato-Semibold.ttf in Resources */,
 				0933A68D1E8407760056640F /* Lato-Medium.ttf in Resources */,
+				0920BF851E89767600E62F34 /* GoogleService-Info.plist in Resources */,
 				0933A6861E8407760056640F /* Lato-Hairline.ttf in Resources */,
 				0933A68A1E8407760056640F /* Lato-Italic.ttf in Resources */,
 				0933A6451E8406690056640F /* Main.storyboard in Resources */,
@@ -421,6 +565,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0615EC9B693CFFD100E45EFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoalsTimeline withBrendonTests/Pods-GoalsTimeline withBrendonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1929EA8B8B4197DCB33E196C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54F83D18A8B009FFC7211F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoalsTimeline withBrendonUITests/Pods-GoalsTimeline withBrendonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E1DAAB6491D5F85EDE55F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81E455888D31DB3192EC3E0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B84FED3AE54D7CFCAA0AEF8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoalsTimeline withBrendonTests/Pods-GoalsTimeline withBrendonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF18D2235505208627D62D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoalsTimeline withBrendon/Pods-GoalsTimeline withBrendon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA899109D2E28F5D445AC149 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoalsTimeline withBrendon/Pods-GoalsTimeline withBrendon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7B24974A34A17C0042703D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoalsTimeline withBrendonUITests/Pods-GoalsTimeline withBrendonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0933A6361E8406690056640F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -428,17 +710,34 @@
 			files = (
 				0933A7121E8432DB0056640F /* NewGoalViewController.swift in Sources */,
 				0933A7101E842D8B0056640F /* NewGoalTableViewCell.swift in Sources */,
+				09139F9F1E9D45CD00F2E9A7 /* DatabaseManager.swift in Sources */,
+				0920BF811E896B6D00E62F34 /* InspirationCategoryHeadingCollectionReusableView.swift in Sources */,
+				0997A6DC1E8ABFD500479C61 /* ButtonTableViewCell.swift in Sources */,
 				0933A69D1E84173F0056640F /* UIFont+GLSAdditions.swift in Sources */,
 				0933A7561E8545080056640F /* NewGoalInspirationViewController.swift in Sources */,
+				09081E2E1E86BD8200761CDE /* NewGoalCollectionViewCell.swift in Sources */,
+				09A9BFDF1E8C18AD0060C5D5 /* RadioButton.swift in Sources */,
+				0920BF791E8960A100E62F34 /* ParagraphLabel.swift in Sources */,
 				0933A63E1E8406690056640F /* AppDelegate.swift in Sources */,
+				0920BF771E895F4B00E62F34 /* InspirationTableViewController.swift in Sources */,
+				09139F9B1E9D3F2000F2E9A7 /* NewGoalSaveTableViewCell.swift in Sources */,
+				09A9BFD91E8AE1490060C5D5 /* InspirationViewController.swift in Sources */,
+				0997A6D81E89C07900479C61 /* MentoringViewController.swift in Sources */,
+				0920BF7F1E896B4A00E62F34 /* InspirationGoalCollectionViewCell.swift in Sources */,
 				09081E271E85679400761CDE /* NewGoalEnterTitleViewController.swift in Sources */,
+				0920BF7D1E89645E00E62F34 /* InspirationTableViewCell.swift in Sources */,
 				09081E291E85910A00761CDE /* NewGoalStakeViewController.swift in Sources */,
+				09139F971E9CFE5000F2E9A7 /* NewGoalMilestonesCollectionViewController.swift in Sources */,
 				09081E2C1E859B1B00761CDE /* Constants.swift in Sources */,
+				0920BF7B1E8962D800E62F34 /* ScreenHeadingWithInfoTextTableViewCell.swift in Sources */,
+				09139F951E9BBDCE00F2E9A7 /* NewGoalModel.swift in Sources */,
 				09081E231E85513200761CDE /* BaseNavigationController.swift in Sources */,
 				09081E251E85585300761CDE /* NewGoalTitleTableViewCell.swift in Sources */,
 				0933A75C1E854FEB0056640F /* BaseViewController.swift in Sources */,
 				0933A7141E843AA00056640F /* NewGoalNavigationController.swift in Sources */,
 				0933A7541E84877C0056640F /* MilestonesViewController.swift in Sources */,
+				0997A6D61E89B4B600479C61 /* inspirationData.swift in Sources */,
+				0920BF741E895A4200E62F34 /* PrimaryUIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,11 +889,12 @@
 		};
 		0933A6651E84066A0056640F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 184D8FD9EC999A995948C63E /* Pods-GoalsTimeline withBrendon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YTL74PYJ64;
 				INFOPLIST_FILE = "GoalsTimeline withBrendon/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(SRCROOT) $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.goalsventure.GoalsTimeline-withBrendon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -603,11 +903,12 @@
 		};
 		0933A6661E84066A0056640F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D23BA1EE81F549665F01D6 /* Pods-GoalsTimeline withBrendon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YTL74PYJ64;
 				INFOPLIST_FILE = "GoalsTimeline withBrendon/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(SRCROOT) $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.goalsventure.GoalsTimeline-withBrendon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -616,6 +917,7 @@
 		};
 		0933A6681E84066A0056640F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE593043225D3C7854FDADE /* Pods-GoalsTimeline withBrendonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -631,6 +933,7 @@
 		};
 		0933A6691E84066A0056640F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2248D77ED7892D20CD895027 /* Pods-GoalsTimeline withBrendonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +949,7 @@
 		};
 		0933A66B1E84066A0056640F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658060850CE5A3D943F3EFDD /* Pods-GoalsTimeline withBrendonUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YTL74PYJ64;
@@ -660,6 +964,7 @@
 		};
 		0933A66C1E84066A0056640F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A510A777CB42A3BD967DE72 /* Pods-GoalsTimeline withBrendonUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YTL74PYJ64;
